@@ -26,6 +26,10 @@
 		\usepackage{todonotes}
 		\usepackage{gensymb}
 		\usepackage{graphicx}
+		\usepackage{float}
+		
+		\usepackage{cite}
+%		\usepackage{apacite}
 		
 		\begin{document}
 				\pagenumbering{gobble}
@@ -40,15 +44,16 @@
 				
 				\chapter{Research questions}
 		
+				To be able to research the subject of Cinematic storytelling in VR, i made three questions to guide me through the process.
 				\begin{itemize}
 					\item How can we make people feel present in a story?
 					\item How can we keep people from missing key story details?
 					\item How can we grab the attention of a user?
 				\end{itemize}
-				\begin{par}
-					All of my research boils down to one single question. And that is how to use composition in VR like they do in cinema. Therefore this will be the main objective of my research.
-					\todo{write more here}
-				\end{par}
+
+				My first intention of this research was to find how cinematic composition translates in VR. But composition in VR has a lot more aspects than just how a single image looks like. A VR storytelling experience is more like a play than a movie. And therefore i will look into how to get the users attention ,keeping it and if we even want to focus it.
+				
+				\todo{Couple the two pieces into eachother}
 
 				
 				\chapter{How can we make people feel present in a story ?}
@@ -72,7 +77,7 @@
 				
 				\chapter{How can we keep people from miss key story details ?}
 				
-				You probably noticed that the title of the chapter is missing an "ing". This is just an example of how a users would feel, missing a part of the story in VR. Missing information can get quite frustrating as you can imagine, in this instance you probably blamed me and you would be right to do so. In a VR experience the same thing would happen. The user thinks you didn't program things properly and they start to doubt your experience as well as feel stupid that they didn't notice the information.
+				You probably noticed that the title of the chapter is missing an "ing". This is just an example of how a users would feel, missing a part of the story in VR. Missing information can get quite frustrating as you can imagine, in this instance you probably blamed me and you would be right to do so. In a VR experience the same thing would happen. The user thinks your experience is poorly made and start to doubt the experience as well as feel stupid that they didn't notice the information.
 				
 				\chapter{How can we grab the attention of a user ?}
 				\todo{maybe add an image that grabs the attention}
@@ -96,14 +101,21 @@
 				This also means that we need a source of that sound to make sure it's not a threat. If you make a sound and don't explain it, people will get uncomfortable. \todo{give a example of henry and the music}
 				
 				\subsection{Pattern interrupt}
-				test
-				\begin{figure}
+				You've probably seen enough images like figure \ref{fig:PatternInterrupt}. Our brains are programmed to see patterns so when one is disrupted it stands out. This would be an excellent way to get attention in VR. This also has some similarities with a technique used in film called negative space which can be seen in figure \ref{fig:NegativeSpace}.
+				
+				\begin{figure}[H]
+					\centering
  					\includegraphics[width=25em]{img/PatternInterrupt.jpg}
 					\caption{A example of pattern interrupt}
-					\label{fig:PatternInterrupt1}
+					\label{fig:PatternInterrupt}
 				\end{figure}
-				
-				Figure \ref{fig:PatternInterrupt1} shows an example of a repetitive pattern that is interrupted by something that doesn't match the pattern.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=25em]{img/C3PONegativeSpace.png}
+					\caption{A example of negative space}
+					\label{fig:NegativeSpace}
+				\end{figure}
+				By making everything but the subject te same or in a pattern, we can still get the attention of people.\todo{improve this}
 				
 				%phantom sound https://www.oculus.com/story-studio/blog/binaural-audio-for-narrative-vr/
 				\subsubsection{music and Narration}
@@ -122,6 +134,15 @@
 				
 				\chapter{Sources}
 				
+				\section{Images}
+				
+				\cite{Nobody06}
 				image pattern interrupt : \href{https://dealerwebb.com/WebSites/1626/Images/Blogs/2241/PatternInterrupt.jpg}{https://dealerwebb.com/WebSites/1626/Images/Blogs/2241/PatternInterrupt.jpg}
+				
+				star wars negative space : \href{https://venngage-wordpress.s3.amazonaws.com/uploads/2015/12/negative-space.png}{https://venngage-wordpress.s3.amazonaws.com/uploads/2015/12/negative-space.png}
+				
+				\section{Literature}
+				\bibliographystyle{apacite}
+				\bibliography{bib.bib}
 				
 		\end{document}
