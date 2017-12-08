@@ -68,7 +68,7 @@
 				The only way to really solve these problem is to make experiences. So i'm glad that there are companies like \href{http://www.penrosestudios.com/}{Penrose studios}, \href{http://www.baobabstudios.com/}{Baobab studios} and \href{https://with.in/}{Within} to take over the torch.
 
 				%https://www.oculus.com/story-studio/blog/5-lessons-learned-while-making-lost/
-				\section{Routine}
+				\section{Routine}\label{chap:Routine}
 				
 				When you go to a movie you start by buying a ticket then you maybe go buy some popcorn or some other snack. And after that you usually still have another 5 minutes of sitting there or some commercials. You mentally prepare yourself during this time and get in a different mindspace. This can be quite crucial in VR. Since we don't have a ticketbooth or popcorn stand. You're just instantly dropped into a new environment. 
 				
@@ -80,14 +80,20 @@
 				In this phase there shouldn't be much in the users environment. In Lost they storytelling studio used a black room with "fi the firefly". This phase is mostly designed for users who haven't had a lot of VR experience and are often overwhelmed the first time they are. So there is a dark room where a firefly flies and react around you. This way there is an introduction
 				
 				\todo{this}
-				being in the envuronment but nothing happens
+				\subsection{Acclimating to the environment}
+				In this phase the user gets put into the actual environment, and let the user look around a bit. At this point users might be overwhelmed with the world you created and look around a bit exploring all the different objects and maybe some sound. This phase should take about 40-50 seconds according to storytelling studio\todo{reference maybe ?}. Be sure not to have \textbf{any} key story details during this phase and let the user truly experience what it's like to be present in your world.
 				
-				actual story
+				\subsection{Starting the story}
+				Now that the users is acclimated and has seen enough of the environment they are ready to listen to your story. To begin the story it might be a good idea to play some sound to set the mood and let them know things are about to start. In the meanwhile you can add your opening credits to the scene making them aware that the story will begin shorty as well as that they have to look to a specific direction. But even now people might still be fascinated by the environment or simply looking the other direction. To avoid this a bird flies by in the beginning of Lost, which flies towards the opening credits and makes the user focus on the important part of you scene.
 				
+				\subsection{Actual Story}
+				Now that your user has settled in and knows which direction to look at, you can start actually telling your story.
 
-				\todo{fi the firefly}
 				
 				\section{Common issues}
+				
+				
+				
 				\begin{itemize}
 					\item Not being acknowledge in the world or the .
 					\item Only one thing happening at a time in the world.
@@ -116,7 +122,7 @@
 				So keeping this example in mind, should we be catering purely to people who want to jump away from the train or should we be finding new ways to make people comfortable with standing in front of that train.
 				
 				\section{Limiting attention space to 180$^{\circ}$}
-				 \todo{make a smooth transition}\todo{the team that made henry ?}The team that made Henry said in a presentation that this is currently still a problem that they don't have a solution for. They found that for now they were still doing experiences in 180 degrees and would in the future like to find a better solution to this. Which they partly did in Dear angelica wherein they used 360 degree of the users environment to draw what can only be described as a VR comic book being drawn while you look. In my opinion this had still a major disadvantage and that it lost me a couple of times. Which made me feel like a absolute idiot and like i was missing a part of the story, which frustrated me endlessly. That being said it was an amazing experiment in 360$^{\circ}$ is storytelling.
+				The team that made Henry said in a presentation that this is  still a big problem, and one that they currently don't have a solution for. They found that for now they were still doing experiences in 180 degrees and would in the future like to find a better solution to this. Which they partly did in Dear angelica wherein they used 360 degree of the users environment to draw what can only be described as a VR comic book being drawn while you look. In my opinion this had still a major disadvantage and that it lost me a couple of times. Which made me feel like a absolute idiot and like i was missing a part of the story, which frustrated me endlessly. That being said it was an amazing experiment in 360$^{\circ}$ is storytelling.
 				
 				\section{Tools to use}
 			
@@ -124,9 +130,22 @@
 				
 				\subsection{Binaural audio}
 				Binaural audio is one of the most intrusive as well as effective tools in your toolbox. Which is probably also why its the first one everyone comes up with. It's effective because we see sudden and unexpected sound as something to investigate. Because of this it's something that catches our attention immediately.			
-				This might very well\todo{maybe a source for this} be an old reflex of when there were still predators that could might be dangerous. \todo{this needs a source or experience} 
+				This might very well \todo{maybe a source for this} be an old reflex of when there were still predators that could might be dangerous. \todo{this needs a source or experience} 
 				
-				This also means that we need a source of that sound to make sure it's not a threat. If you make a sound and don't explain it, people will get uncomfortable. \todo{give a example of henry and the music}
+				This also means that we need a source of that sound to make sure it's not a threat. If you make a sound and don't explain it, people will get uncomfortable. During the making of Henry, Storytelling studio wanted to incorporate music. But because this is a VR experience we're talking about they wanted to make it spatial audio. And what they found was that when they put the different sound sources into the scene while it was black the users where fine with it. But when people were put into a scene that had no visible sound sources but still sound coming from that direction, they started to get uncomfortable. So what they did was to actually make it simple stereo audio because people were already used to having on headphones.
+				
+				So to use sound properly you basically have to mimic the real world. 
+				And make sure to :
+				\begin{itemize}
+					\item Don't overuse it
+					\item Explain your sounds when visible
+					\item Use stereo audio for narration and music
+				\end{itemize}
+				There is still a lot to learn about audio in VR and what we can an cannot use, so sometimes you just have to test what works best in you experience. \todo{maybe not the best ender}
+				
+				
+				
+				 \todo{give a example of henry and the music}
 				
 				\subsection{Pattern interrupt and negative space}
 				You've probably seen enough images like figure \ref{fig:PatternInterrupt}. Our brains are programmed to see patterns, so when a pattern is disrupted it stands out. This also has some similarities with a technique used in film called negative space which can be seen in figure \ref{fig:NegativeSpace}. This uses a lot of unused space to make the used space that more important. 
@@ -134,26 +153,27 @@
 				
 				\begin{figure}[!h]
 					\centering
-					\begin{minipage}[b]{0.35\textwidth}
+					\begin{minipage}[b!]{0.35\textwidth}
 						\includegraphics[width=\textwidth]{img/PatternInterrupt.jpg}
 						\caption{Pattern interrupt.}
 						\label{fig:PatternInterrupt}
 					\end{minipage}
 					\hfill
-					\begin{minipage}[b]{0.4\textwidth}
+					\begin{minipage}[b!]{0.4\textwidth}
 						\includegraphics[width=\textwidth]{img/C3PONegativeSpace.png}
 						\caption{Negative space.}
 						\label{fig:NegativeSpace}
 					\end{minipage}
 				\end{figure}
 				
-				This technique also works in VR and is actually used in the intro of Henry.\todo{reference}.	By making everything but the subject equal or in a pattern, we can still grab peoples attention.\todo{improve or remove this}
+				This technique also works in VR and is actually used in the intro of Henry.\todo{reference}.	By making everything but the subject equal or in a pattern, we can still grab peoples attention. \todo{improve or remove this}				
+				\todo{warning about how to use it}				
+				In figure \ref{fig:henryIntro} we can see how negative space is used in the intro of henry. They have a intro where you can sit down, some music starts playing and then slowly after the title card is displayed a story is told by a narrator and picture frames pop up to enhance the experience. this is an excellent use of negative space because it isn't used to focus your attention full time but rather to guide you to the starting point. People need a kind of pallet cleanser before going into such an experience as talked about in \autoref{chap:Routine}.\todo{make sure to finish this}
 				
-				\todo{warning about how to use it}
-				
-				In figure \ref{fig:henryIntro} we can see how negative space is used in the intro of henry. They have a intro where you can sit down, some music starts playing and then slowly after the title card is displayed a story is told by a narrator and picture frames pop up to enhance the experience. this is an excellent use of negative space because it isn't used to focus your attention full time but rather to guide you to the starting point. People need a kind of pallet cleanser before going into such an experience. Just as you need to buy some popcorn, sit down and relax to see a movie before you can properly enjoy it. \todo{need to reference to a different chapter about how to start a vr experience} \todo{make sure to finish this}
-				\begin{figure}[h]
-					 \includegraphics[width=\linewidth]{img/henry_intro.png}
+				\todo{fix the henry image formatting}
+				\begin{figure}[h!]
+					\centering
+					 \includegraphics[width=\linewidth/2]{img/henry_intro.png}
 					\caption{Intro of Henry.}
 					\label{fig:henryIntro}
 				\end{figure}
