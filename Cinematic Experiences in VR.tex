@@ -28,10 +28,13 @@
 		\usepackage{graphicx}
 		\usepackage{float}
 		
-		\usepackage{cite}
-%		\usepackage{apacite}
+%		\usepackage{cite}
+		\usepackage{apacite}
+		\bibliographystyle{apacite}
+
 		
 		\begin{document}
+			
 				\pagenumbering{gobble}
 				\maketitle
 				\tableofcontents
@@ -60,7 +63,7 @@
 				\section{Resources}		\todo{make a better title}		
 				Making people feel present is a delicate balance, a world that doesn't feel right can be a big problem in a storytelling experience. A real-world example of this would be, someone talking during a movie. This often brings people back to reality and can be quite frustrating. Although this might be annoying when watching a movie, it can be quite devastating while in VR. Breaking the illusion of a virtual world even once can make it feel unreal or even more important, uninteresting.
 
-				Currently there isn't a lot of official research on what these things might be in relation to cinematic experiences. But luckily there still is Oculus storytellingstudio. Storytellingstudio was a department of Oculus specifically set up to test how cinematic experiences in VR can be created. To research the subject they took the first steps into animating storytelling experiences. With the motto of "story is king", they are currently still \textbf{the} resource on storytelling in VR. 
+				Currently there isn't a lot of official research on what these things might be in relation to cinematic experiences. But luckily there still is Oculus story studio. Story studio was a department of Oculus specifically set up to test how cinematic experiences in VR can be created. To research the subject they took the first steps into animating storytelling experiences. With the motto of "story is king", they are currently still \textbf{the} resource on storytelling in VR. 
 				
 				Unfortunately the department has been closed since they didn't want to compete in a marketplace they were creating research for. But not before they put a lot of the research online on their blog and making some amazing proof-of-concept pieces like Henry and Dear Angelica. Currently they are still the most valuable resources about storytelling in VR.
 				
@@ -76,10 +79,10 @@
 				To make such a routine you could use three phases.
 				
 				\subsection{Introduction}
-				In this phase there shouldn't be much in the users environment. In Lost they storytelling studio used a black room with "fi the firefly". This phase is mostly designed for users who haven't had a lot of VR experience and are often overwhelmed the first time they are. So there is a dark room where a firefly flies and react around you. This way there is an introduction to a different world and how it reacts to you. It can also be a good palette cleanser since it starts in entirely black environment with only one point of interest. This is usually a good distraction from the real world and a introduction to the virtual one.
+				In this phase there shouldn't be much in the users environment. In Lost story studio used a black room with "fi the firefly". This phase is mostly designed for users who haven't had a lot of VR experience and are often overwhelmed the first time they are. So there is a dark room where a firefly flies and react around you. This way there is an introduction to a different world and how it reacts to you. It can also be a good palette cleanser since it starts in entirely black environment with only one point of interest. This is usually a good distraction from the real world and a introduction to the virtual one.
 				
 				\subsection{Acclimating to the environment}
-				In this phase the user gets put into the actual environment, and let the user look around a bit. At this point users might be overwhelmed with the world you created and look around a bit exploring all the different objects and maybe some sound. This phase should take about 40-50 seconds according to storytelling studio\todo{reference maybe ?}. Be sure not to have \textbf{any} key story details during this phase and let the user truly experience what it's like to be present in your world.
+				In this phase the user gets put into the actual environment, and let the user look around a bit. At this point users might be overwhelmed with the world you created and look around a bit exploring all the different objects and maybe some sound. This phase should take about 40-50 seconds according to story studio\todo{reference maybe ?}. Be sure not to have \textbf{any} key story details during this phase and let the user truly experience what it's like to be present in your world.
 				
 				\subsection{Starting the story}
 				Now that the users is acclimated and has seen enough of the environment they are ready to listen to your story. To begin the story it might be a good idea to play some sound to set the mood and let them know things are about to start. In the meanwhile you can add your opening credits to the scene making them aware that the story will begin shorty as well as that they have to look to a specific direction. But even now people might still be fascinated by the environment or simply looking the other direction. To avoid this a bird flies by in the beginning of Lost, which flies towards the opening credits and makes the user focus on the important part of you scene.
@@ -92,14 +95,24 @@
 				
 				% https://www.oculus.com/story-studio/blog/the-swayze-effect/
 				\subsection{The Swayze effect}
-				Accurately named after the actor from the movie ghost. This is an effect where the user isn't acknowledged in the world. 
+				Accurately named after actor Patrick Swayze from the movie ghost. This is an effect where the user isn't acknowledged in the world.
+				
+				There is often a lot to look at in a VR world which can often lead people to be distracted in your experience which might not be all to great for your story. To get peoples attention they should be interested in the characters that are in the story. One of the most important part of this is to acknowledge the user. We feel left out when we're not acknowledged and don' feel for or are uninterested in the characters. Thus you need to acknowledge people in your world. In Henry, he actually looks at you, this acknowledgement is kind of key. And even though it doesn't really make sense that he looks at you because you don't actually exist in the story, it makes Henry feel real.
+				
+				So to make sure that your audience is more interested in the story than your surroundings you need to acknowledge them to make a character feel more real and interesting.
+				
+				If you wish to learn more about this effect you can do so  \href{https://www.oculus.com/story-studio/blog/the-swayze-effect/}{here}.
+				
 				% https://www.oculus.com/story-studio/blog/5-lessons-learned-while-making-lost/ 4 Be aware of Spatial Story Density
 				\subsection{Spatial Story Density}
-				Only one thing happening at a time in the world.
+				\textit{``If only one thing happens in VR at any given time, as is the case in film, the world quickly starts to feel empty and strangely fake.''} - Saschka Unseld (Oculus Story studio)
+
+				This quote explains quite well what section is about. Basically when you're in a room you might not immediately notice smaller details like pictures hanging on a wall or things that might represent the characters. These things can and should be intermittently noticed by the viewer to enchance the characters. If things like these are absent we might as well have used a black room to show you the story. 				
+				It's important to have these kind of things because people sometimes drift off and look and feel around the room. And when they are absent it can like Saschka Unseld said feel empty or fake.
 				
 				% https://www.oculus.com/story-studio/blog/the-problem-with-reality/
 				\subsection{Working space and the real world}
-				Walking into objects.
+				In VR walking into objects can be quite jarring and even world-breaking. Such it should be avoided at all cost. Unfortunately it can be quite hard to do this in a cinematic experience. Because you are mostly confined to one space in a cinematic experience you need to be in a ideal position in your movement-space. Figure\ref{fig:area_most} displays the ideal starting position of the user, in this case you have the ideal world-space to movement-space. You spawn in to the scene in the middle and walk everywhere in you movement-space. Figure \ref{fig:area_least} is a somewhat more likely case of what happens when you spawn into the experience. The movement-space and world-space don't match causing things to be off and might enable the user to walk into things or restrict them from experiencing certain parts of the experience. Therefore you need to be careful with where you spawn the user as well as putting things closer or farther from the movement-space. \todo{paragraphing and structuring}
 				
 				\begin{figure}[!h]
 					\centering
@@ -115,18 +128,27 @@
 						\label{fig:area_least}
 					\end{minipage}
 				\end{figure}
+			
+				After looking into just the spacing of movement- to world-space you still have one problem. And that is going from scene to scene without spawning into objects. You can somewhat control where your user spawns but if you have some kind of objects in the world-space and they spawn into it, it might be quite jarring. Figure \ref{fig:area_object} is an excellent visualisation of this. 
 				
 				\begin{figure}[h!]
 					\centering
 					\includegraphics[width=\linewidth/3]{img/area_in_object.png}
-					\caption{Mapping into objects.} 
+					\caption{Spawning into objects.} 
 					\label{fig:area_object}
 				\end{figure}
 			\todo{make better caption.}
 				
 				\chapter{How can we keep people from miss key story details ?}
 				
-				You probably noticed that the title of the chapter is missing an "ing". This is just an example of how a users would feel, missing a part of the story in VR. Missing information can get quite frustrating as you can imagine, in this instance you probably blamed me and you would be right to do so. In a VR experience the same thing would happen. The user thinks your experience is poorly made and start to doubt the experience as well as feel stupid that they didn't notice the information.
+				You probably noticed that the title of this chapter is missing an "ing". This is just an example of how a users would feel, missing a part of the story in VR. Missing information can get quite frustrating as you can imagine, in this instance you probably blamed me and you would be right to do so. In a VR experience the same thing would happen. The user thinks your experience is poorly made and start to doubt the world as well as feel stupid that they didn't notice the information.
+				
+				\section{Letting go}
+				
+				
+				\section{Guiding attention}
+				
+				
 				
 				\todo{write the chapter}
 				
@@ -151,11 +173,12 @@
 			
 				Now that we have looked at what things we might and might not want to do, we can look at tools that can be used to focus a users attention.
 				
-				\subsection{Binaural audio}
-				Binaural audio is one of the most intrusive as well as effective tools in your toolbox. Which is probably also why its the first one everyone comes up with. It's effective because we see sudden and unexpected sound as something to investigate. Because of this it's something that catches our attention immediately.			
-				This might very well \todo{maybe a source for this} be an old reflex of when there were still predators that could might be dangerous. \todo{this needs a source or experience} 
 				
-				This also means that we need a source of that sound to make sure it's not a threat. If you make a sound and don't explain it, people will get uncomfortable. During the making of Henry, Storytelling studio wanted to incorporate music. But because this is a VR experience we're talking about they wanted to make it spatial audio. And what they found was that when they put the different sound sources into the scene while it was black the users where fine with it. But when people were put into a scene that had no visible sound sources but still sound coming from that direction, they started to get uncomfortable. So what they did was to actually make it simple stereo audio because people were already used to having on headphones.
+				%phantom sound https://www.oculus.com/story-studio/blog/binaural-audio-for-narrative-vr/
+				\subsection{Binaural audio}
+				Binaural audio is one of the most intrusive as well as effective tools in your toolbox. Which is probably also why its the first one everyone comes up with. It's effective because we see sudden and unexpected sound as something to investigate. This would've been a huge advantage when there were still a lot of dangers in the world, but now we can use it to catch someone's attention.
+				
+				This also means that we need a source of that sound to make sure it's not a threat. If you make a sound and don't explain it, people will get uncomfortable. During the making of Henry, Story studio wanted to incorporate music. But because this is a VR experience we're talking about they wanted to make it spatial audio. And what they found was that when they put the different sound sources into the scene while it was black the users where fine with it. But when people were put into a scene that had no visible sound sources but still sound coming from that direction, they started to get uncomfortable. So what they did was just use simple stereo audio and they found was that people were already used to having headphones. And were therefore fine with it.
 				
 				So to use sound properly you basically have to mimic the real world. 
 				And make sure to :
@@ -164,11 +187,8 @@
 					\item Explain your sounds when visible
 					\item Use stereo audio for narration and music
 				\end{itemize}
-				There is still a lot to learn about audio in VR and what we can an cannot use, so sometimes you just have to test what works best in you experience. \todo{maybe not the best ender}
+				There is still a lot to learn about audio in VR and what we can an cannot use, so sometimes you just have to test what works best for your experience. 
 				
-				
-				
-				 \todo{give a example of henry and the music}
 				
 				\subsection{Pattern interrupt and negative space}
 				You've probably seen enough images like figure \ref{fig:PatternInterrupt}. Our brains are programmed to see patterns, so when a pattern is disrupted it stands out. This also has some similarities with a technique used in film called negative space which can be seen in figure \ref{fig:NegativeSpace}. This uses a lot of unused space to make the used space that more important. 
@@ -209,8 +229,6 @@
 				You can't completely focus all of you attention on one point. Now you might think, what if i make only one thing happen at a time. Surely the user will focus on the one thing that is interesting. Unfortunately this will make the world feel fake\todo{add citation of blog}. When only one thing around us is making noise or is interesting the entire world seems fake because the real world isn't like that. When people are put into sensory deprivation tanks the often begin to hallucinate because the brain needs input. Now of course people won't start hallucinating in VR because there still is a lot of input but if there is only one thing to focus on or happening at a particular time the world seems fake. 
 				This has primarily to do with sound. Listen to what's around you right now and notice how there is sound coming from all directions. May it be the water running through the radiator, a clock gently ticking or cars driving by. Our brains filter out a lot of uninteresting noise, but when it isn't there the brain starts to notice.
 				
-				%phantom sound https://www.oculus.com/story-studio/blog/binaural-audio-for-narrative-vr/
-				\subsection{Music and Narration}
 								
 				\chapter{Conclusion}
 				\section{Where is VR storytelling currently}
@@ -234,7 +252,6 @@
 				\href{http://moziru.com/images/pop-art-clipart-pow-12.jpg}{http://moziru.com/images/pop-art-clipart-pow-12.jpg}
 				
 				\section{Literature}
-				\bibliographystyle{apacite}
-				\bibliography{bib.bib}
+				\bibliography{bib}
 				
 		\end{document}
